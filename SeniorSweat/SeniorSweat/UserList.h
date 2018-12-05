@@ -9,6 +9,7 @@
 #ifndef UserList_h
 #define UserList_h
 using namespace std;
+
 class UserList{
     friend class Matcher;
 public:
@@ -20,10 +21,12 @@ public:
     User* head;
     User* last;
 };
+
 UserList::UserList(){
     head=NULL;
     last=NULL;
 }
+
 void UserList::print(){
     User*temp=head;
     while(temp!=NULL){

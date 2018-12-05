@@ -23,9 +23,11 @@ public:
 private:
     UserList* ListProcess;
 };
+
 Matcher::Matcher(){
     ListProcess=NULL;
 }
+
 Matcher::Matcher(UserList*p){ //two copies of the list
     ListProcess=p;
 }

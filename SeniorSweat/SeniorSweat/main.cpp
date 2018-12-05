@@ -18,20 +18,23 @@ int main(int argc, const char * argv[]) {
     string s="";
     fstream InputFile;
     InputFile.open(argv[1]);
+    
+    //eliminates question from stream.
     getline(InputFile,s);
     UserList UL;
-    UserList*l=&UL;
+    UserList* l = &UL;
     
     
     while(getline(InputFile,s)){
-        stringstream ss;
-        ss<<s;
+        stringstream userData;
+        userData<<s;
         string q="";
-        ss>>q;//date
-        ss>>q;//time
-        ss>>q;//ID
-        l->add(q);
-        while(ss>>q){
+        userData>>q;//date
+        userData>>q;//time
+        userData>>q;//ID
+        
+        l->add(q); 
+        while(userData>>q){
             l->head->Choices.push_back(q);
         }
        
