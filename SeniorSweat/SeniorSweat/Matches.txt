@@ -1,0 +1,8 @@
+NETID:	MATCHES:------>
+ddd	ccc	bbb	aaa	
+ccc	ddd	aaa	
+bbb	ddd	
+aaa	ddd	ccc	
+	
+	
+	
